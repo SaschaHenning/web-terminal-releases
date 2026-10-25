@@ -1,8 +1,8 @@
 # WebTerminal — releases
 
 Public distribution channel for **WebTerminal**, a passkey-protected web
-terminal with persistent tmux sessions, packaged as an unsigned macOS menu-bar
-app. The application source lives in a separate, private repository; this repo
+terminal with persistent tmux sessions, packaged as a signed and notarized
+macOS menu-bar app. The application source lives in a separate, private repository; this repo
 holds only the built releases and their notes.
 
 ## Download
@@ -15,9 +15,11 @@ Grab the latest Apple Silicon build from
 
 No GitHub account or token is needed — the releases are public.
 
-First launch: macOS blocks an unsigned app. Right-click the app icon → **Open**,
-then confirm in the dialog (or System Settings → Privacy & Security →
-**Open Anyway**). This is a one-time step per installed build.
+First launch: the app is signed with a Developer ID and notarized by Apple, so
+macOS opens it directly.
+
+Setting up several devices, your own hub and paired devices: see
+[INSTALL.md](INSTALL.md).
 
 ## Updates
 
